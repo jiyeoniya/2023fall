@@ -1,1 +1,2 @@
-print("Hello World")
+print("姓名：朴祉燕")
+print("学号：10224602413")
