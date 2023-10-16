@@ -12,8 +12,3 @@ if is_prime(a):
     print(a, "是质数")
 else:
     print(a, "不是质数")
-b = int(input("请输入一个整数："))
-if is_prime(b):
-    print(b, "是质数")
-else:
-    print(b, "不是质数")
