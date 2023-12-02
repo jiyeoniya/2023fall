@@ -1,2 +1,0 @@
-第1行视频发生错误：'NoneType' object has no attribute 'string'
-第1行视频发生错误：'NoneType' object has no attribute 'string'
