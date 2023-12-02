@@ -84,6 +84,7 @@
 
 如下图所示：
 
+![]("https://github.com/jiyeoniya/2023fall/blob/main/LastProject/resultPIc/mysql1.png")
 
 ## <span id="jump3">3.数据清洗</span>
 
@@ -114,6 +115,8 @@
   
   通过对比“job.csv”和“job_clean.csv”两份文件，可以发现“job_clean.csv”文件更规范、更易于处理和分析。
 
+![]("https://github.com/jiyeoniya/2023fall/blob/main/LastProject/resultPIc/before.png")
+![]("https://github.com/jiyeoniya/2023fall/blob/main/LastProject/resultPIc/clean.png")
 ## <span id="jump4">4.数据分析与可视化</span>
 
 ### 有做很多其他的数据可视化大屏，最后也有用html整合为一个可视化网站，但在下面只列出三种：
@@ -150,6 +153,9 @@
     
     # datazoom_opts=opts.DataZoomOpts()#滚动条
     bar.render("各城市工资.html")
+
+   最后得到如下所示：
+   ![]("https://github.com/jiyeoniya/2023fall/blob/main/LastProject/resultPIc/%E5%90%84%E5%AD%A6%E5%8E%86%E5%B7%A5%E8%B5%84.png") 
 ### （2）针对评价词云的分析
 
   方法与上述类似，首先使用 pandas 库中的 groupby() 方法对一个名为 df 的数据框按照列名为 '工作标签' 的列进行分组，并计算每组中另一列名为 '平均工资(K)' 的数值型变量的数量。 然后将每个标签及其出现次数分别存储在 tags 和 value 中。
@@ -176,6 +182,9 @@
 
     mywordcloud.render("WordCloud-图片.html")
 
+最后得到如下所示：
+   ![]("https://github.com/jiyeoniya/2023fall/blob/main/LastProject/resultPIc/%E8%AF%8D.png") 
+
 ### （3）针对学历占比的分析
   知道了上面两种如何分析，之后就很容易了。首先使用 pandas 库中的 groupby() 方法对一个名为 df 的数据框按照列名为 '工作学历' 的列进行分组，并计算每组中另一列名为 '平均工资(K)' 的数值型变量的数量。然后将每个学历及其出现次数分别存储在 attr 和 value 中。然后使用列表推导式创建一个包含元组的列表 data_pair，其中每个元组包括一个学历和该学历出现的次数。
 
@@ -198,6 +207,9 @@
 
     pie.set_series_opts(label_opts=opts.LabelOpts(formatter='{b}:{d}%'))
     pie.render("学历要求占比.html")
+
+最后得到如下所示：
+   ![]("https://github.com/jiyeoniya/2023fall/blob/main/LastProject/resultPIc/%E5%AD%A6%E5%8E%86%E8%A6%81%E6%B1%82%E5%8D%A0%E6%AF%94.png") 
 
  ## <span id="jump5">5.总结</span>
 
